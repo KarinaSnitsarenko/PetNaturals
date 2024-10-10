@@ -13,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="./js/index.js"></script>
   </head>
   <body>
     <div class="background-container-1">
@@ -26,7 +25,7 @@
                 <li class="header-nav-item"><a href="#order" class="header-nav-link">ORDER</a></li>
                 <li class="header-nav-item"><a href="#about" class="header-nav-link">ABOUT</a></li>
                 <li class="header-nav-item"><a href="#results" class="header-nav-link">RESULTS</a></li>
-              </ul>        
+            </ul>        
         </nav>
         </div>
             </header>
@@ -35,6 +34,9 @@
                     <div class="container calming-container">
                         <h1 class="calming-title">Pet Naturals of Vermont, Calming, For Cats</h1>
                         <div class="calming-description">
+                          <div class="calming-image-container">
+                                    <img src="./images/cats.webp" alt="playing cats with PetNaturals" class="calming-image">
+                               </div>
                             <article class="calming-card">
                                 <h3 class="calming-card-text">Your cat deserves the best pet supplement the world has to offer. 
                                 That's what's in the package. 
@@ -45,15 +47,10 @@
                                     <li class="calming-card-item">Helps manage everyday stress</li>
                                 </ul>
                             </article>
-
-                                   <div class="calming-image-container">
-                                    <img src="./images/cats.webp" alt="playing cats with PetNaturals" class="calming-image">
-                               </div>
-                         
-                            <article id="order-card" class="order-card">
-                                <div class="order-card-top">
+                            <article id="order" class="order-card">
+                                <div class="order-card-container">
                                     <h2 class="order-card-title">TIME LEFT</h2>
-                                    <div class="order-card-timer" id="countdown"></div>
+                                    <div class="order-card-countdown" id="countdown"></div>
                                     <span class="order-card-old-price">120uah</span>
                                     <span class="order-card-new-price">60uah</span>
                                 </div>
@@ -61,13 +58,13 @@
                                     <input class="order-card-name order-card-input" 
                                     type="text"
                                     placeholder="Name">
-                                    <input class="order-card-phone order-card-input" 
+                                    <input class="order-card-tel order-card-input" 
                                     type="tel"
-                                    id="phone"
-                                    name="phone"
+                                    id="tel"
+                                    name="tel"
                                     placeholder="+38(0__) ___-__-__">
                                     <button class="order-card-button" type="button">ORDER</button>
-                                    <div class="order-card-date" id="order-date"></div>
+                                    <div class="formatDate" id="formatDate"></div>
                                 </div>
                             </article>
                     </div>
@@ -170,5 +167,7 @@
         </div>
        </div>
      </main> 
+      <script src="./js/countdown.js"></script>
+      <script src="./js/formattedDate.js"></script>
   </body>
 </html>
